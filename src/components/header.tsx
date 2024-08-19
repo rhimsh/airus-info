@@ -22,7 +22,7 @@ const Header = ({ handleClickMenu, isDesktop, setIsMenuOpen, isEnglish, setIsEng
   if (isDesktop) {
     return (
       <header className='text-gray-700 h-[72px] w-full max-w-full font-[600] flex justify-center px-[360px] py-[14px] items-center sticky top-0 bg-black bg-opacity-[0.01] backdrop-blur-[15px] z-30 font-suitVariable'>
-        <div className='text-[20px]'>AIRUS</div>
+        <div className='text-[20px] font-extrabold'>AIRUS</div>
         <div className='mx-[100px]'></div>
         <nav className='min-w-[800px]'>
           <ul className='flex w-full justify-between items-center text-[15px] font-[500]'>
@@ -105,7 +105,7 @@ const Header = ({ handleClickMenu, isDesktop, setIsMenuOpen, isEnglish, setIsEng
   }
   return (
     <header className='h-[50px] w-full max-w-full flex justify-between items-center sticky top-0 text-gray-50 bg-black bg-opacity-[0.01] backdrop-blur-[15px] z-30 font-suitVariable px-[30px]'>
-      <div className='text-[20px]'>AIRUS</div>
+      <div className='text-[20px] font-extrabold'>AIRUS</div>
       <Image
         src='/assets/mobile/menus.png'
         alt=''
