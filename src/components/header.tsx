@@ -77,7 +77,7 @@ const Header = ({ handleClickMenu, isDesktop, setIsMenuOpen, isEnglish, setIsEng
             <li className='relative'>
               <div
                 onClick={toggleDropdown}
-                className='border-[1px] border-gray-500 w-[78px] h-fit rounded-[6px] text-center py-[8px] font-[600] cursor-pointer'
+                className='border-[1px] border-gray-500 w-[78px] h-fit rounded-[6px] text-center py-[6px] font-[600] cursor-pointer'
               >
                 {isEnglish ? 'English' : '한국어'}
               </div>

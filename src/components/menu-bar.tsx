@@ -114,10 +114,6 @@ const MenuBar = ({
               Contact
             </li>
           </div>
-          {/* <li className='border-[1px] border-white w-fit h-fit py-[10px] px-[10px] rounded-[6px] font-[600]'>
-            English
-          </li> */}
-
           <li className='relative'>
             {isDropdownOpen && (
               <ul className='absolute left-0 bottom-[40px] border-[1px] border-gray-400 w-[78px] rounded-[6px] shadow-lg font-[600]'>
@@ -145,7 +141,7 @@ const MenuBar = ({
             )}
             <div
               onClick={toggleDropdown}
-              className='border-[1px] border-gray-500 w-[78px] h-fit rounded-[6px] text-center py-[8px] font-[600] cursor-pointer'
+              className='border-[1px] border-gray-500 w-[78px] h-fit rounded-[6px] text-center py-[6px] font-[600] cursor-pointer'
             >
               {isEnglish ? 'English' : '한국어'}
             </div>
