@@ -22,13 +22,13 @@ const ApplicationsSection = ({ isDesktop, isEnglish }: Props) => {
     );
   }
   return (
-    <div className='w-fit h-fit'>
+    <div className='w-fit h-fit bg-[rgb(13,13,24)]'>
       <Image
         src={
           isEnglish ? '/assets/mobile/applications.png' : '/assets/mobile/korean/applications.png'
         }
         width={550}
-        height={1617}
+        height={750}
         alt='applications-mobile'
       />
     </div>
