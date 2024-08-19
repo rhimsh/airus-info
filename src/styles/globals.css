@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'SUIT-Variable';
+    src: url('/fonts/SUIT-Variable-1.ttf') format('truetype');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'montserrat';
+    src: url('/fonts/Montserrat-Medium.ttf') format('truetype');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'montserrat-bold';
+    src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'montserrat-semibold';
+    src: url('/fonts/Montserrat-Semibold.ttf') format('truetype');
+    font-display: swap;
+  }
+}
+
+:root {
+  /* spacing */
+  --content-padding: 40px;
+  --content-width: calc(1570px + (var(--content-padding) * 2));
+
+  /* mobile */
+  --mobile-header-height: 70px;
+  @media only screen and (max-width: 767px) {
+    body {
+      background-color: black;
+    }
+  }
+}
+
+body {
+  min-block-size: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: overlay;
+  /* color: var(--black); */
+}
