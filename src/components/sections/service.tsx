@@ -8,7 +8,12 @@ interface Props {
 const ServiceSection = ({ isDesktop, isEnglish }: Props) => {
   if (isDesktop) {
     return (
-      <div className='w-fit h-fit'>
+      <div
+        className='w-fit h-fit'
+        onContextMenu={e => {
+          e.preventDefault();
+        }}
+      >
         <Image
           src={isEnglish ? '/assets/desktop/service.png' : '/assets/desktop/korean/service.png'}
           width={1920}
@@ -19,7 +24,12 @@ const ServiceSection = ({ isDesktop, isEnglish }: Props) => {
     );
   }
   return (
-    <div className='w-fit h-fit bg-[rgb(13,13,24)]'>
+    <div
+      className='w-fit h-fit bg-[rgb(13,13,24)]'
+      onContextMenu={e => {
+        e.preventDefault();
+      }}
+    >
       <Image
         src={isEnglish ? '/assets/mobile/service.png' : '/assets/mobile/korean/service.png'}
         width={550}

@@ -6,7 +6,12 @@ interface Props {
 const AboutUsSection = ({ isDesktop, isEnglish }: Props) => {
   if (isDesktop) {
     return (
-      <div className='w-fit h-fit'>
+      <div
+        className='w-fit h-fit'
+        onContextMenu={e => {
+          e.preventDefault();
+        }}
+      >
         <Image
           src={
             isEnglish
@@ -21,7 +26,12 @@ const AboutUsSection = ({ isDesktop, isEnglish }: Props) => {
     );
   }
   return (
-    <div className='w-fit h-fit'>
+    <div
+      className='w-fit h-fit'
+      onContextMenu={e => {
+        e.preventDefault();
+      }}
+    >
       <Image
         src={isEnglish ? '/assets/mobile/about-1.png' : '/assets/mobile/korean/about-1.png'}
         width={550}

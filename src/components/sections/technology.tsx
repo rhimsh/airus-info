@@ -8,7 +8,12 @@ interface Props {
 const TechnologySection = ({ isDesktop, isEnglish }: Props) => {
   if (isDesktop) {
     return (
-      <div className='w-fit h-fit'>
+      <div
+        className='w-fit h-fit'
+        onContextMenu={e => {
+          e.preventDefault();
+        }}
+      >
         <Image
           src={
             isEnglish ? '/assets/desktop/technology.png' : '/assets/desktop/korean/technology.png'
@@ -21,7 +26,12 @@ const TechnologySection = ({ isDesktop, isEnglish }: Props) => {
     );
   }
   return (
-    <div className='w-fit h-fit'>
+    <div
+      className='w-fit h-fit'
+      onContextMenu={e => {
+        e.preventDefault();
+      }}
+    >
       <Image
         src={isEnglish ? '/assets/mobile/technology.png' : '/assets/mobile/korean/technology.png'}
         width={550}

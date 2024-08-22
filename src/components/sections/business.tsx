@@ -13,11 +13,19 @@ const BusunessSection = ({ isDesktop, isEnglish }: Props) => {
         width={1920}
         height={1080}
         alt=''
+        onContextMenu={e => {
+          e.preventDefault();
+        }}
       />
     );
   }
   return (
-    <div className='w-fit h-fit bg-black'>
+    <div
+      className='w-fit h-fit bg-black'
+      onContextMenu={e => {
+        e.preventDefault();
+      }}
+    >
       <Image
         src={isEnglish ? '/assets/mobile/business.png' : '/assets/mobile/korean/business.png'}
         width={550}

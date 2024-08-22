@@ -7,7 +7,12 @@ interface Props {
 const ApplicationsSection = ({ isDesktop, isEnglish }: Props) => {
   if (isDesktop) {
     return (
-      <div className='w-fit h-fit'>
+      <div
+        className='w-fit h-fit'
+        onContextMenu={e => {
+          e.preventDefault();
+        }}
+      >
         <Image
           src={
             isEnglish
@@ -22,7 +27,12 @@ const ApplicationsSection = ({ isDesktop, isEnglish }: Props) => {
     );
   }
   return (
-    <div className='w-fit h-fit bg-[rgb(13,13,24)]'>
+    <div
+      className='w-fit h-fit bg-[rgb(13,13,24)]'
+      onContextMenu={e => {
+        e.preventDefault();
+      }}
+    >
       <Image
         src={
           isEnglish ? '/assets/mobile/applications.png' : '/assets/mobile/korean/applications.png'

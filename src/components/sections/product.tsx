@@ -10,7 +10,12 @@ interface Props {
 const ProductSection = ({ isDesktop, isEnglish }: Props) => {
   if (isDesktop) {
     return (
-      <div className='w-fit h-fit relative'>
+      <div
+        className='w-fit h-fit relative'
+        onContextMenu={e => {
+          e.preventDefault();
+        }}
+      >
         <Image
           src={isEnglish ? '/assets/desktop/product.png' : '/assets/desktop/korean/product.png'}
           width={1920}
@@ -24,7 +29,12 @@ const ProductSection = ({ isDesktop, isEnglish }: Props) => {
     );
   }
   return (
-    <div className='w-fit h-fit relative'>
+    <div
+      className='w-fit h-fit relative'
+      onContextMenu={e => {
+        e.preventDefault();
+      }}
+    >
       <Image
         src={isEnglish ? '/assets/mobile/product.png' : '/assets/mobile/korean/product.png'}
         width={550}
